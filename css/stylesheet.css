@@ -429,6 +429,9 @@ footer a, footer a:link, footer a:visited, footer a:hover {
 		grid-column: 2 / span 1;
 		grid-row: 2 / span 1;
 	}
+	.letra-chica {
+		font-size: 2.9vw !important;
+	}
 
 	
 }
