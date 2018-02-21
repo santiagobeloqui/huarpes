@@ -251,6 +251,10 @@ nav {
 	grid-column: 4 / span 1;
 }
 
+
+
+
+
 	
 
 #contacto img {
@@ -302,16 +306,13 @@ footer a, footer a:link, footer a:visited, footer a:hover {
 /*RESPONSIVE*/
 
 @media only screen and (max-width: 768px){
-	p {
-		font-size: 1.8vw;
-	}
 
 	#quienes-somos img{
 		display: none;
 	}
 	
 	.quienes-somos-grid{
-	margin: 0% 4% 4% 4%;
+	margin: 0% 0% 4% 4%;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	max-width: 100%;
@@ -325,9 +326,9 @@ footer a, footer a:link, footer a:visited, footer a:hover {
 	}
 
 	.mapas-grid{
-	width: 100%;
+	width: 98%;
 	margin-top: 3%;
-	margin-left: 1%;
+	margin-left: 2%;
 	display: grid;
 	grid-template-columns: 1% 95% 1%;
 	grid-template-rows: 1fr 1fr;
@@ -350,11 +351,7 @@ footer a, footer a:link, footer a:visited, footer a:hover {
 	.mapas-grid iframe{
 		height: 200px;
 	}
-	
 
-}
-
-@media only screen and (max-width:365px){
 	h1{
 		font-size: 8vw;
 		font-family: 'Alegreya Sans', sans-serif;
@@ -402,7 +399,7 @@ footer a, footer a:link, footer a:visited, footer a:hover {
 		margin: 4%;
 		text-align: right;
 	}
-	
+
 	.contacto-grid{
     background-color: rgba(241,166,60,1);
     width: 100%;
@@ -429,9 +426,19 @@ footer a, footer a:link, footer a:visited, footer a:hover {
 		grid-column: 2 / span 1;
 		grid-row: 2 / span 1;
 	}
-	.letra-chica {
+
+	.letra-chica{
 		font-size: 2.9vw !important;
+		margin-top: 3%;
 	}
+	
+
+}
+
+@media only screen and (max-width:365px){
+	
+	
+	
 
 	
 }
