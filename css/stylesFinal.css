@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+
+/*_________HEADER________*/
+.logo{
+    width:20%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.nav-element{
+    display: inline-block;
+    margin-left: 2%;
+}

@@ -1,12 +1,11 @@
+*{
+	margin:0;
+}
 div.container-fluid{
 	margin-right: 0px;
 	padding-right: 0px;
 	margin-left: 0px;
 	padding-left: 0px;
-}
-
-body {
-	padding-top: 80px;
 }
 
 h1{
@@ -37,14 +36,16 @@ p{
 }
 
 nav {
-	background-color: white !important;
-    -webkit-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.75);
+	background-color: rgba(255,255,255,0) !important;
+    /* -webkit-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.75);
     -moz-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.75);
-    box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.75);
+	box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.75); */
+	color: white;
 }
 
 .navbar-brand {
   padding: 0px;
+  opacity:0;
 }
 
 .navbar-brand>img {
@@ -60,6 +61,8 @@ nav {
 .nav >li >a {
   padding-top: 30px;
   padding-bottom: 30px;
+  color: white !important;
+  font-weight: 600;
 }
 .navbar-toggle {
   padding: 10px;
@@ -68,33 +71,34 @@ nav {
 
 /* PORTADA */
 
-.carousel-indicators li
-{
-	display: inline-block;
-	width: 8px;
-	height: 8px;
-	margin: 1px;
-	text-indent: -999px;
-	cursor: pointer;
-	background-color: rgba(241,166,60, 0.8);
-	border: 1px solid rgba(241,166,60, 0.8);
-	border-radius: 50%;
-}
-.carousel-indicators .active
-{
-	width: 13px;
-	height: 13px;
-	margin: 0;
-	background-color: rgb(241,166,60);
-}
 
 #portada {
+	margin-top: 0 !important;
 	border-bottom: 0px;
 	padding-bottom: 0px;
+	background-image: url("../images/img1.jpg");
+	background-size: cover;
+	height: 600px;
+	width: 100%;
 }
 
-#portada img{
+.portada-gradient{
 	width: 100%;
+	height: auto;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#166c3b+0,f1a626+100 */
+background: rgb(22,108,59); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(22,108,59,0.8) 0%, rgba(241,166,38,0.8) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(22,108,59,0.8) 0%,rgba(241,166,38,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(22,108,59,0.8) 0%,rgba(241,166,38,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#166c3b', endColorstr='#f1a626',GradientType=1 ); /* IE6-9 */
+}
+
+.portada-title{
+	width: 30%;
+	margin-left: 10%;
+	height: 100%;
+	padding: 13% 0;
+	color: white;
 }
 
 
