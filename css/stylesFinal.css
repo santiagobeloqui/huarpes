@@ -1,3 +1,9 @@
+.test{
+    background-color: blue;
+    width: 50px;
+    height: 2000px;
+}
+
 *{
     margin: 0;
 }
@@ -22,8 +28,16 @@ header{
     position: fixed;
 }
 
+.header-white{
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
+	box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
+}
+
 .logo{
     width:20%;
+    padding: 0.5% 0;
     margin-left: 2%;
     opacity: 0;
 }
@@ -31,8 +45,15 @@ nav{
     width: 70%;
     margin-right: 2%;
     text-align: right;
-
+    color: white;
 }
+
+.nav-color-grey{
+    color: rgb(100,100,100);
+}
+
+
+
 nav ul{
     list-style-type: none;
 }
@@ -40,10 +61,11 @@ nav ul{
 .nav-element{
     display: inline-block;
     margin-left: 3%;
-    color: white;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 800;
 }
+
+
 
 /*_________PORTADA_________*/
 .portada {

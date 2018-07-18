@@ -2,8 +2,9 @@
 let sectionPortada = document.getElementById("section-portada");
 let posSectionPortadaBottom = sectionPortada.getBoundingClientRect().bottom;
 
-//----- Nav ------
+//----- Adaptación Header ------
 let headerLogo = document.getElementById("header-logo");
+let header = document.getElementById("header");
 
 
 //----- Animación Nav Responsive-----
@@ -18,3 +19,18 @@ menuButton.addEventListener("click", ()=>{
     }
     
 });
+
+//----- Animación scroll -----
+
+window.onscroll = ()=>{
+    if (window.pageYOffset > posSectionPortadaBottom){
+        headerLogo.style.opacity = 1;
+        header.classList.add("header-white");
+        nav.classList.add("nav-color-grey");
+    }
+    if (window.pageYOffset < posSectionPortadaBottom){
+        headerLogo.style.opacity = 0;
+        header.classList.remove("header-white");
+        nav.classList.remove("nav-color-grey");
+    }
+};
