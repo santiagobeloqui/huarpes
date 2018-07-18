@@ -35,6 +35,14 @@ header{
 	box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
 }
 
+.header-mobile{
+    display: none;
+}
+
+.logo-mobile{
+    display: none;
+}
+
 .logo{
     width:20%;
     padding: 0.5% 0;
@@ -160,6 +168,10 @@ nav ul{
         }
     }
 
+    .nav-color-grey{
+        color: white;
+    }
+
     nav ul{
         position: absolute;
         width: 100%;
@@ -177,10 +189,41 @@ nav ul{
         background-color: rgb(148, 147, 147);
     }
 
+    .header-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0;
+        border: none;
+        background-color: transparent;
+    }
+
+    .header-mobile-visible{
+        background-color: white;
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
+        box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
+
+    }
+
+    .logo-mobile{
+        display: block;
+        opacity: 0;
+    }
+
+    .logo-mobile-visible{
+        opacity:1;
+    }
+
     .menu-button{
         background-color: transparent;
         border: none;
-        margin-left: 85%;
+        margin-right: 5%;
+        
+    }
+
+    .menu-button:hover{
+        cursor: pointer;
     }
     
     .menu-button-part{
@@ -189,5 +232,13 @@ nav ul{
         height: 5px;
         margin-bottom: 3px;
         border-radius: 5%;
+    }
+
+    .menu-button-part-orange{
+        background-color: rgb(241,166,38)
+    }
+
+    .logo-mobile{
+        width:70%;
     }
 }
