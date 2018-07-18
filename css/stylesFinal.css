@@ -28,8 +28,9 @@ header{
     opacity: 0;
 }
 nav{
-    width: 30%;
+    width: 70%;
     margin-right: 2%;
+    text-align: right;
 
 }
 nav ul{
@@ -41,7 +42,7 @@ nav ul{
     margin-left: 3%;
     color: white;
     font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 /*_________PORTADA_________*/
@@ -74,10 +75,47 @@ nav ul{
     line-height: 90%;
 }
 
+
 /*__________________________________*/
 /*__________MEDIA QUERY_____________*/
 /*__________________________________*/
 
 @media (max-width: 768px){
+    .portada{
+        background-position: center;
+    }
+    .portada-title{
+        font-size: 3em;
+        padding: 35vh 0;
+    }
+    header{
+        justify-content: center;
+        width: 100%;
+        margin:0;
+    }
 
+    .logo{
+        display: none;
+        margin:0;
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    nav ul{
+        width: 100%;
+        margin:0;
+        padding: 0;
+    }
+    .nav-element{
+        display: block;
+        width: 100%;
+        margin: 0;
+        border: 1px solid grey;
+        margin: 0;
+        padding: 4% 0;
+        background-color: white;
+        opacity:0;
+    }
 }
