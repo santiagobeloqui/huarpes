@@ -208,11 +208,43 @@ nav ul{
 
     .logo-mobile{
         display: block;
-        opacity: 0;
+        visibility: hidden;
     }
 
     .logo-mobile-visible{
+        visibility: visible;
+    }
+
+    .logo-mobile-hide{
         opacity:1;
+        animation-name: logo-hide;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes logo-hide{
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    .logo-mobile-show{
+        opacity: 0;
+        animation-name: logo-show;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes logo-show{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
     }
 
     .menu-button{

@@ -18,8 +18,12 @@ let menuButton = document.getElementById("menu-button");
 menuButton.addEventListener("click", ()=>{
     if (nav.className == "nav-animation-in"){
         nav.className = "nav-animation-out";
+        logoMobile.classList.remove("logo-mobile-hide");
+        logoMobile.classList.add("logo-mobile-show");
     } else{
         nav.className = "nav-animation-in";
+        logoMobile.classList.remove("logo-mobile-show");
+        logoMobile.classList.add("logo-mobile-hide");
     }
     
 });
