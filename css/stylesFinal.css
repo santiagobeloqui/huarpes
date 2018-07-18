@@ -184,9 +184,13 @@ nav ul{
         width: 100%;
         padding: 15px 0;
         margin:0;
-        border-top: 1px solid grey;
+        /* border-top: 1px solid rgb(180, 180, 180); */
         opacity:1;
-        background-color: rgb(148, 147, 147);
+        /* background-color: rgb(190, 190, 190); */
+        background-color: white;
+        color: rgb(100,100,100);
+        border-bottom: 1px solid rgb(230, 230, 230);
+
     }
 
     .header-mobile{
@@ -267,7 +271,7 @@ nav ul{
     }
 
     .menu-button-part-orange{
-        background-color: rgb(241,166,38)
+        background-color: rgb(243, 175, 79);
     }
 
     .logo-mobile{
