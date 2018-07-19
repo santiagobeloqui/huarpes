@@ -286,11 +286,14 @@ nav ul {
 }
 
 .footer-pomelo {
-    width: 21%;
+    width: 15%;
     border-left: 1px solid rgb(120, 120, 120);
     padding-left: 3%;
     color: rgb(120, 120, 120);
-    font-size: 1vw;
+}
+
+.footer-pomelo p{
+    font-size: 0.8vw;
 }
 
 .footer-pomelo img {
@@ -298,7 +301,7 @@ nav ul {
 }
 
 .footer-tacleando {
-    width: 40%;
+    width: 20%;
 }
 
 .footer-tacleando img {
@@ -308,6 +311,7 @@ nav ul {
 .footer-up {
     display: flex;
     flex-flow: row;
+    align-items: center;
     justify-content: space-between;
     padding: 2% 4% 0;
 }
@@ -320,7 +324,7 @@ nav ul {
 }
 
 .footer-credit p {
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 
 .footer-credit a {
@@ -509,7 +513,8 @@ nav ul {
         padding: 25% 0;
     }
     .vision-col {
-        width: 100%;
+        width: 90%;
+        margin: 0 5%;
     }
     /*ENTRENAMIENTOS*/
     .section-entrenamientos {
