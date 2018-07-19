@@ -175,14 +175,14 @@ nav ul {
 /*____________VISION________________*/
 
 .section-vision {
-    color: rgb(46, 59, 59);
+    color: white;
     line-height: 26px;
     background-image: url("../images/bg_vision.jpg");
     background-size: cover;
 }
 
 .vision-box {
-    background-color: rgba(0, 128, 0, 0.2);
+    background-color: rgba(0, 128, 0, 0.4);
     background-position: center;
     display: flex;
     justify-content: center;
@@ -290,6 +290,7 @@ nav ul {
     border-left: 1px solid rgb(120, 120, 120);
     padding-left: 3%;
     color: rgb(120, 120, 120);
+    font-size: 1vw;
 }
 
 .footer-pomelo img {
@@ -567,19 +568,31 @@ nav ul {
         text-align: center;
         padding: 2% 0;
         color: rgb(120, 120, 120);
-        border-top: 1px solid rgb(120, 120, 120);
+        font-size: 3.5vw;
     }
     .footer-pomelo {
-        width: 55%;
+        width: 100%;
         border-left: none;
         text-align: center;
         padding-left: 0;
         margin: 2%;
         color: rgb(120, 120, 120);
+        font-size: 2vw;
     }
+
+    .footer-pomelo img{
+        width: 55%;
+    }
+
+    .footer-pomelo p{
+        font-size: 4vw; 
+        width: 100%;
+    }
+
     .footer-tacleando {
         width: 100%;
         margin: 0;
+        display: none;
     }
     .footer-up {
         flex-flow: column;
