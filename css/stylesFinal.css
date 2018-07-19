@@ -142,6 +142,30 @@ nav ul{
 	width:70%;
 }
 
+/*___________ENTRENAMIENTOS_________*/
+.entrenamientos-title{
+    color: rgb(120,120,120);
+    margin-bottom: 5%;
+}
+.section-entrenamientos{
+    display: flex;
+    padding: 10% 0;
+}
+
+.entrenamientos-text{
+    width:40%;
+    margin-left: 5%;
+}
+
+.entrenamientos-p{
+    font-size: 1.3vw;
+	color: rgb(120,120,120);
+}
+
+.entrenamientos-map{
+    width: 40%;
+    margin-left: 10%;
+}
 
 /*____________SUMATE________________*/
 .section-sumate{
@@ -400,7 +424,31 @@ nav ul{
 	.quienes-somos-txt p{
         grid-column: 2 / span 1;
         font-size: 1em;
-	}
+    }
+    
+    /*ENTRENAMIENTOS*/
+
+    .section-entrenamientos{
+        display: block;
+    }
+
+    .entrenamientos-title{
+        font-size: 9vw;
+    }
+
+    .entrenamientos-text{
+        width: 90%;
+    }
+
+    .entrenamientos-p{
+        font-size: 1em;
+    }
+
+    .entrenamientos-map{
+        width: 90%;
+        margin: 10% 5%;
+    }
+
 
     /*SUMATE*/
 
