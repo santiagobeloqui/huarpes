@@ -1,7 +1,3 @@
-.test {
-    height: 100vh;
-}
-
 * {
     margin: 0;
 }
@@ -107,37 +103,10 @@ nav ul {
     line-height: 90%;
 }
 
-/*____________VISION________________*/
-
-.section-vision {
-    color: rgb(46, 59, 59);
-    line-height: 26px;
-    background-image: url("../images/bg_vision.jpg");
-    background-size: cover;
-}
-
-.vision-box {
-    background-color: rgba(0, 128, 0, 0.2);
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-    align-items: center;
-    padding: 10% 6%;
-}
-
-.vision-col {
-    width: 50%;
-}
-
-.vision-col p {
-    padding: 2%;
-}
-
 /*___________QUIÉNES SOMOS__________*/
 
 .quienes-somos-grid {
-    margin: 0% 0% 4% 4%;
+    margin: 0% 0% 4% 5%;
     padding-top: 5%;
     padding-bottom: 5%;
     max-width: 100%;
@@ -172,6 +141,33 @@ nav ul {
     width: 70%;
 }
 
+/*____________VISION________________*/
+
+.section-vision {
+    color: rgb(46, 59, 59);
+    line-height: 26px;
+    background-image: url("../images/bg_vision.jpg");
+    background-size: cover;
+}
+
+.vision-box {
+    background-color: rgba(0, 128, 0, 0.2);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items: center;
+    padding: 10% 6%;
+}
+
+.vision-col {
+    width: 50%;
+}
+
+.vision-col p {
+    padding: 2% 2% 2% 0;
+}
+
 /*___________ENTRENAMIENTOS_________*/
 
 .entrenamientos-title {
@@ -202,7 +198,7 @@ nav ul {
 /*____________SUMATE________________*/
 
 .section-sumate {
-    background-color: rgb(243, 175, 79);
+    background-color: hsl(35, 87%, 63%);
     height: 90vh;
 }
 
@@ -250,6 +246,55 @@ nav ul {
 
 .link-img {
     width: 100%;
+}
+
+/*____________FOOTER________________*/
+
+.footer {
+    padding-top: 2%;
+}
+
+.footer-pomelo {
+    width: 21%;
+    border-left: 1px solid rgb(120, 120, 120);
+    padding-left: 3%;
+    color: rgb(120, 120, 120);
+}
+
+.footer-pomelo img {
+    width: 100%;
+}
+
+.footer-tacleando {
+    width: 40%;
+}
+
+.footer-tacleando img {
+    width: 100%;
+}
+
+.footer-up {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 2% 4% 0;
+}
+
+.footer-credit {
+    width: 100%;
+    text-align: center;
+    padding: 1% 0;
+    color: rgb(120, 120, 120);
+}
+
+.footer-credit p {
+    font-size: 0.9em;
+}
+
+.footer-credit a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(120, 120, 120);
 }
 
 /*__________________________________*/
@@ -397,7 +442,7 @@ nav ul {
         border-radius: 5%;
     }
     .menu-button-part-orange {
-        background-color: rgb(243, 175, 79);
+        background-color: hsl(35, 86%, 63%);
     }
     .logo-mobile {
         width: 70%;
@@ -481,5 +526,30 @@ nav ul {
     }
     .sumate-link p {
         display: none;
+    }
+    /* FOOTER */
+    .footer-credit {
+        width: 100%;
+        text-align: center;
+        padding: 2% 0;
+        color: rgb(120, 120, 120);
+        border-top: 1px solid rgb(120, 120, 120);
+    }
+    .footer-pomelo {
+        width: 55%;
+        border-left: none;
+        text-align: center;
+        padding-left: 0;
+        margin: 2%;
+        color: rgb(120, 120, 120);
+    }
+    .footer-tacleando {
+        width: 100%;
+        margin: 0;
+    }
+    .footer-up {
+        flex-flow: column;
+        padding: 2% 4%;
+        align-items: center;
     }
 }
