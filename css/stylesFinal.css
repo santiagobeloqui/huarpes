@@ -1,110 +1,142 @@
-.test{
+.test {
     height: 100vh;
 }
 
-*{
+* {
     margin: 0;
 }
 
-h1{
-	font-size: 5.9vw;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-weight: 800;
+h1 {
+    font-size: 5.9vw;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 800;
 }
 
-p{
-	font-size: 1.3vw;
-	font-family: 'Open Sans', sans-serif;
+p {
+    font-size: 1.3vw;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*_________HEADER________*/
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
 }
 
-.header-white{
+.header-white {
     background-color: white;
-    -webkit-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
-    -moz-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
-	box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
+    z-index: 1;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(201, 185, 201, 0.40);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(201, 185, 201, 0.40);
+    box-shadow: 0px 1px 5px 0px rgba(201, 185, 201, 0.40);
 }
 
-.header-mobile{
+.header-mobile {
     display: none;
 }
 
-.logo-mobile{
+.logo-mobile {
     display: none;
 }
 
-.logo{
-    width:20%;
+.logo {
+    width: 20%;
     padding: 0.5% 0;
     margin-left: 2%;
     opacity: 0;
 }
-nav{
+
+nav {
     width: 70%;
     margin-right: 2%;
     text-align: right;
     color: white;
 }
 
-.nav-color-grey{
-    color: rgb(100,100,100);
+.nav-color-grey {
+    color: rgb(100, 100, 100);
 }
 
-
-
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
-.nav-element{
+.nav-element {
     display: inline-block;
     margin-left: 3%;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 800;
 }
 
-
-
 /*_________PORTADA_________*/
+
 .portada {
-	margin-top: 0 !important;
-	border-bottom: 0px;
-	padding-bottom: 0px;
-	background-image: url("../images/img1.jpg");
-	background-size: cover;
-	width: 100%;
+    margin-top: 0 !important;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    background-image: url("../images/img1.jpg");
+    background-size: cover;
+    width: 100%;
 }
 
-.portada-gradient{
-	width: 100%;
-	height: auto;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#166c3b+0,f1a626+100 */
-    background: rgb(22,108,59); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(22,108,59,0.8) 0%, rgba(241,166,38,0.8) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(22,108,59,0.8) 0%,rgba(241,166,38,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(22,108,59,0.8) 0%,rgba(241,166,38,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#166c3b', endColorstr='#f1a626',GradientType=1 ); /* IE6-9 */
+.portada-gradient {
+    width: 100%;
+    height: auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#166c3b+0,f1a626+100 */
+    background: rgb(22, 108, 59);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(22, 108, 59, 0.8) 0%, rgba(241, 166, 38, 0.8) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(22, 108, 59, 0.8) 0%, rgba(241, 166, 38, 0.8) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(22, 108, 59, 0.8) 0%, rgba(241, 166, 38, 0.8) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#166c3b', endColorstr='#f1a626', GradientType=1);
+    /* IE6-9 */
 }
 
-.portada-title{
-	width: 30%;
-	margin-left: 5%;
-	height: 40vh;
-	padding: 30vh 0;
+.portada-title {
+    width: 30%;
+    margin-left: 5%;
+    height: 40vh;
+    padding: 30vh 0;
     color: white;
     line-height: 90%;
 }
 
+/*____________VISION________________*/
+
+.section-vision {
+    color: rgb(46, 59, 59);
+    line-height: 26px;
+    background-image: url("../images/bg_vision.jpg");
+    background-size: cover;
+}
+
+.vision-box {
+    background-color: rgba(0, 128, 0, 0.2);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items: center;
+    padding: 10% 6%;
+}
+
+.vision-col {
+    width: 50%;
+}
+
+.vision-col p {
+    padding: 2%;
+}
 
 /*____________SUMATE________________*/
-.section-sumate{
+
+.section-sumate {
     background-color: rgb(243, 175, 79);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -113,77 +145,75 @@ nav ul{
     align-items: center;
 }
 
-.section-sumate{
+.section-sumate {
     color: white;
 }
 
-.sumate-title{
-    color:white;
+.sumate-title {
+    color: white;
     grid-column: 1 / span 2;
-    grid-row: 1 / span 1; 
+    grid-row: 1 / span 1;
 }
 
-.sumate-text{
+.sumate-text {
     color: white;
     grid-column: 1 / span 1;
-    grid-row: 2 / span 1; 
+    grid-row: 2 / span 1;
     width: 70%;
 }
 
-.sumate-contact{
+.sumate-contact {
     color: white;
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    width: 70%   
+    width: 70%
 }
 
-.sumate-link{
+.sumate-link {
     display: flex;
     align-items: center;
     margin: 5% 0;
 }
 
-.sumate-link a{
+.sumate-link a {
     width: 10%;
 }
 
-.sumate-link p{
+.sumate-link p {
     margin-left: 5%;
 }
 
-.link-img{
+.link-img {
     width: 100%;
 }
 
-
-
 /*__________________________________*/
+
 /*__________MEDIA QUERY_____________*/
+
 /*__________________________________*/
 
-@media (max-width: 768px){
-    p{
+@media (max-width: 768px) {
+    p {
         font-size: 1em;
     }
-    .portada{
+    .portada {
         background-position: center;
     }
-    .portada-title{
+    .portada-title {
         font-size: 3em;
         padding: 35vh 0;
     }
-    header{
+    header {
         justify-content: center;
         width: 100%;
-        margin:0;
+        margin: 0;
     }
-
-    .logo{
+    .logo {
         display: none;
-        margin:0;
+        margin: 0;
     }
-
-    nav{
+    nav {
         position: absolute;
         width: 100%;
         height: 200px;
@@ -191,181 +221,155 @@ nav ul{
         margin: 0;
         top: -200px;
     }
-
-    .nav-animation-in{
+    .nav-animation-in {
         animation-name: nav-in;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
-
-    @keyframes nav-in{
-        0%{
+    @keyframes nav-in {
+        0% {
             top: -200px;
         }
-        100%{
+        100% {
             top: 0;
         }
     }
-
-    .nav-animation-out{
+    .nav-animation-out {
         animation-name: nav-out;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
-
-    @keyframes nav-out{
-        0%{
+    @keyframes nav-out {
+        0% {
             top: 0;
         }
-        100%{
+        100% {
             top: -200px;
         }
     }
-
-    .nav-color-grey{
+    .nav-color-grey {
         color: white;
     }
-
-    nav ul{
+    nav ul {
         position: absolute;
         width: 100%;
-        margin:0;
+        margin: 0;
         padding: 0;
     }
-
-    .nav-element{
+    .nav-element {
         display: block;
         width: 100%;
         padding: 15px 0;
-        margin:0;
+        margin: 0;
         /* border-top: 1px solid rgb(180, 180, 180); */
-        opacity:1;
+        opacity: 1;
         /* background-color: rgb(190, 190, 190); */
         background-color: white;
-        color: rgb(100,100,100);
+        color: rgb(100, 100, 100);
         border-bottom: 1px solid rgb(230, 230, 230);
-
     }
-
-    .header-mobile{
+    .header-mobile {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding:0;
+        padding: 0;
         border: none;
         background-color: transparent;
     }
-
-    .header-mobile-visible{
+    .header-mobile-visible {
         background-color: white;
-        -webkit-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
-        -moz-box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
-        box-shadow: 0px 1px 5px 0px rgba(201,185,201,0.40);
-
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(201, 185, 201, 0.40);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(201, 185, 201, 0.40);
+        box-shadow: 0px 1px 5px 0px rgba(201, 185, 201, 0.40);
     }
-
-    .logo-mobile{
+    .logo-mobile {
         display: block;
         visibility: hidden;
     }
-
-    .logo-mobile-visible{
+    .logo-mobile-visible {
         visibility: visible;
     }
-
-    .logo-mobile-hide{
-        opacity:1;
+    .logo-mobile-hide {
+        opacity: 1;
         animation-name: logo-hide;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
-
-    @keyframes logo-hide{
-        0%{
+    @keyframes logo-hide {
+        0% {
             opacity: 1;
         }
-        100%{
+        100% {
             opacity: 0;
         }
     }
-
-    .logo-mobile-show{
+    .logo-mobile-show {
         opacity: 0;
         animation-name: logo-show;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
-
-    @keyframes logo-show{
-        0%{
+    @keyframes logo-show {
+        0% {
             opacity: 0;
         }
-        100%{
+        100% {
             opacity: 1;
         }
     }
-
-    .menu-button{
+    .menu-button {
         background-color: transparent;
         border: none;
         margin-right: 5%;
-        
     }
-
-    .menu-button:hover{
+    .menu-button:hover {
         cursor: pointer;
     }
-    
-    .menu-button-part{
+    .menu-button-part {
         background-color: white;
         width: 35px;
         height: 5px;
         margin-bottom: 3px;
         border-radius: 5%;
     }
-
-    .menu-button-part-orange{
+    .menu-button-part-orange {
         background-color: rgb(243, 175, 79);
     }
-
-    .logo-mobile{
-        width:70%;
+    .logo-mobile {
+        width: 70%;
     }
-
-    .section-sumate{
+    .vision-box {
+        flex-flow: column;
+    }
+    .vision-col {
+        width: 100%;
+    }
+    .section-sumate {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr 1fr;
     }
-
-    .sumate-title{
+    .sumate-title {
         grid-column: 1 / span 1;
-        grid-row: 1 / span 1; 
+        grid-row: 1 / span 1;
         font-size: 10vw;
     }
-
-    .sumate-text{
+    .sumate-text {
         grid-column: 1 / span 1;
         grid-row: 2 / span 1;
         width: 90%;
     }
-
-    .sumate-contact{
+    .sumate-contact {
         grid-column: 1 / span 1;
         grid-row: 3 / span 1;
         width: 95%;
         text-align: center;
     }
-
-    .sumate-link{
+    .sumate-link {
         display: inline-block;
         width: 15%;
         margin-right: 7%;
     }
-
-   
-
-
-    .sumate-link p{
+    .sumate-link p {
         display: none;
     }
 }
