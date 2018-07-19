@@ -71,6 +71,10 @@ nav ul {
     font-weight: 800;
 }
 
+.nav-element:hover{
+    cursor: pointer;
+}
+
 /*_________PORTADA_________*/
 
 .portada {
@@ -110,14 +114,15 @@ nav ul {
 /*____________VISION________________*/
 
 .section-vision {
-    color: rgb(46, 59, 59);
+    /* color: rgb(46, 59, 59); */
+    color:white;
     line-height: 26px;
     background-image: url("../images/bg_vision.jpg");
     background-size: cover;
 }
 
 .vision-box {
-    background-color: rgba(0, 128, 0, 0.2);
+    background-color: rgba(0, 128, 0, 0.4);
     background-position: center;
     display: flex;
     justify-content: center;
@@ -147,7 +152,7 @@ nav ul {
     align-items: center;
 }
 
-#quienes-somos h1 {
+#section-quienes h1 {
     color: rgb(241, 166, 60);
 }
 
@@ -166,7 +171,7 @@ nav ul {
     grid-column: 3/ span 1;
 }
 
-#quienes-somos img {
+#section-quienes img {
     margin-top: 10%;
     border-radius: 50%;
     width: 70%;
@@ -181,7 +186,7 @@ nav ul {
 
 .section-entrenamientos {
     display: flex;
-    padding: 10% 0;
+    padding: 12% 0;
 }
 
 .entrenamientos-text {
@@ -262,6 +267,7 @@ nav ul {
     p {
         font-size: 1em;
     }
+
     /*PORTADA*/
     .portada {
         background-position: center;
@@ -403,10 +409,10 @@ nav ul {
         width: 70%;
     }
     /*QUIÉNES SOMOS*/
-    #quienes-somos {
-        padding: 10% 0;
+    #section-quienes {
+        padding: 25% 0;
     }
-    #quienes-somos img {
+    #section-quienes img {
         display: none;
     }
     .quienes-somos-grid {
@@ -419,7 +425,7 @@ nav ul {
         justify-items: center;
         align-items: center;
     }
-    #quienes-somos h1 {
+    #section-quienes h1 {
         font-size: 10vw;
     }
     .quienes-somos-txt p {
@@ -429,6 +435,7 @@ nav ul {
     /* VISION */
     .vision-box {
         flex-flow: column;
+        padding: 25% 0;
     }
     .vision-col {
         width: 100%;
@@ -436,6 +443,7 @@ nav ul {
     /*ENTRENAMIENTOS*/
     .section-entrenamientos {
         display: block;
+        padding: 25% 0;
     }
     .entrenamientos-title {
         font-size: 9vw;
@@ -454,9 +462,11 @@ nav ul {
     .section-sumate {
         flex-flow: column;
         height: auto;
+        padding: 25% 0;
     }
     .sumate-title {
         font-size: 10vw;
+        padding-top: 0;
     }
     .sumate-content {
         flex-flow: column;
@@ -474,7 +484,6 @@ nav ul {
         display: inline-block;
         width: 15%;
         margin: 0 3%;
-        margin-bottom: 8%;
     }
     .sumate-link a {
         width: 15%;

@@ -1,6 +1,42 @@
 //----- Posiciones -----
 let sectionPortada = document.getElementById("section-portada");
+let sectionQuienes = document.getElementById("section-quienes");
+let sectionVision = document.getElementById("section-vision");
+let sectionEntrenamientos = document.getElementById("section-entrenamientos");
+let sectionSumate = document.getElementById("section-sumate");
+
 let posSectionPortadaBottom = sectionPortada.getBoundingClientRect().bottom;
+let posSectionQuienes = sectionQuienes.getBoundingClientRect().top;
+let posSectionVision = sectionVision.getBoundingClientRect().top;
+let posSectionEntrenamientos = sectionEntrenamientos.getBoundingClientRect().top;
+let posSectionSumate = sectionSumate.getBoundingClientRect().top;
+
+//----- Links Nav y Scroll -----
+
+let linkQuienes = document.getElementById("link-quienes");
+let linkVision = document.getElementById("link-vision");
+let linkEntrenamientos = document.getElementById("link-entrenamientos");
+let linkSumate = document.getElementById("link-sumate");
+
+function linking(button, section){
+    button.addEventListener("click", ()=>{
+        window.scroll({
+            top: section + 1,
+            left: 0,
+            behavior: 'smooth'
+        });
+        setTimeout(()=>{
+            nav.classList.add("nav-animation-out");
+            logoMobile.classList.remove("logo-mobile-hide");
+            logoMobile.classList.add("logo-mobile-show");
+        }, 300);
+    });
+}
+
+linking(linkQuienes, posSectionQuienes);
+linking(linkVision, posSectionVision);
+linking(linkEntrenamientos, posSectionEntrenamientos);
+linking(linkSumate, posSectionSumate);
 
 //----- Adaptación Header ------
 let headerLogo = document.getElementById("header-logo");
@@ -24,8 +60,7 @@ menuButton.addEventListener("click", ()=>{
         nav.className = "nav-animation-in";
         logoMobile.classList.remove("logo-mobile-show");
         logoMobile.classList.add("logo-mobile-hide");
-    }
-    
+    }    
 });
 
 //----- Animación scroll -----
