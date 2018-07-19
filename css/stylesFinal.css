@@ -103,13 +103,55 @@ nav ul{
 }
 
 
+/*___________QUIÉNES SOMOS__________*/
+
+.quienes-somos-grid{
+	margin: 0% 0% 4% 4%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 1% 49% 49% 1%;
+	justify-items: center;
+	align-items: center;
+}
+
+#quienes-somos h1 {
+	color: rgb(241,166,60);
+}
+
+
+.quienes-somos-txt{
+    grid-column: 2 / span 1;
+}
+
+.quienes-somos-txt p{
+    font-size: 1.3vw;
+	color: rgb(120,120,120);
+    font-family: 'Open Sans', sans-serif;
+    margin: 2% 0;
+}
+
+.quienes-somos-img{
+	grid-column: 3/ span 1;
+}
+
+#quienes-somos img{
+	margin-top: 10%;
+	border-radius: 50%;
+	width:70%;
+}
+
+
 /*____________SUMATE________________*/
 .section-sumate{
     background-color: rgb(243, 175, 79);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25vh 75vh;
-    justify-items: center;
+    height: 90vh;
+}
+
+.sumate-content{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -119,28 +161,26 @@ nav ul{
 
 .sumate-title{
     color:white;
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 1; 
+    margin-left: 5%;
+    padding-top: 8%;
 }
 
 .sumate-text{
     color: white;
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1; 
-    width: 70%;
+    width: 40%;
+    margin: 0 5%;
 }
 
 .sumate-contact{
     color: white;
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-    width: 70%   
+    width: 40%;
+    margin: 0 5%;   
 }
 
 .sumate-link{
     display: flex;
     align-items: center;
-    margin: 5% 0;
+    margin: 5% 10%;
 }
 
 .sumate-link a{
@@ -165,6 +205,8 @@ nav ul{
     p{
         font-size: 1em;
     }
+
+    /*PORTADA*/
     .portada{
         background-position: center;
     }
@@ -238,9 +280,7 @@ nav ul{
         width: 100%;
         padding: 15px 0;
         margin:0;
-        /* border-top: 1px solid rgb(180, 180, 180); */
         opacity:1;
-        /* background-color: rgb(190, 190, 190); */
         background-color: white;
         color: rgb(100,100,100);
         border-bottom: 1px solid rgb(230, 230, 230);
@@ -332,38 +372,71 @@ nav ul{
         width:70%;
     }
 
-    .section-sumate{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 4fr 1fr;
+    /*QUIÉNES SOMOS*/
+
+    #quienes-somos{
+        padding: 10% 0;
     }
 
+    #quienes-somos img{
+		display: none;
+	}
+	
+	.quienes-somos-grid{
+	margin: 0% 0% 4% 4%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 1% 98% 1%;
+	justify-items: center;
+	align-items: center;
+    }
+    
+    #quienes-somos h1{
+        font-size: 10vw;        
+    }
+
+	.quienes-somos-txt p{
+        grid-column: 2 / span 1;
+        font-size: 1em;
+	}
+
+    /*SUMATE*/
+
+    .section-sumate{
+        flex-flow: column;
+        height: auto;
+    }
     .sumate-title{
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1; 
         font-size: 10vw;
     }
 
+    .sumate-content{
+        flex-flow: column;
+    }
+
     .sumate-text{
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
         width: 90%;
+        margin: 10% 0;
     }
 
     .sumate-contact{
-        grid-column: 1 / span 1;
-        grid-row: 3 / span 1;
-        width: 95%;
+        width: 80%;
         text-align: center;
+        margin: 0;
     }
 
     .sumate-link{
         display: inline-block;
         width: 15%;
-        margin-right: 7%;
+        margin:0 3%;
+        margin-bottom: 8%;
     }
 
-   
-
+    .sumate-link a{
+        width: 15%;
+    }
 
     .sumate-link p{
         display: none;
