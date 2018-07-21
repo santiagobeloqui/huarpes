@@ -107,33 +107,6 @@ nav ul {
     line-height: 90%;
 }
 
-/*____________VISION________________*/
-
-.section-vision {
-    color: white;
-    line-height: 26px;
-    background-image: url("../images/bg_vision.jpg");
-    background-size: cover;
-}
-
-.vision-box {
-    background-color: rgba(0, 128, 0, 0.4);
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-    align-items: center;
-    padding: 10% 6%;
-}
-
-.vision-col {
-    width: 50%;
-}
-
-.vision-col p {
-    padding: 2%;
-}
-
 /*___________QUIÉNES SOMOS__________*/
 
 .quienes-somos-grid {
@@ -174,31 +147,32 @@ nav ul {
 
 /*____________VISION________________*/
 
-.section-vision {
-    color: white;
-    line-height: 26px;
-    background-image: url("../images/bg_vision.jpg");
-    background-size: cover;
-}
-
-.vision-box {
-    background-color: rgba(0, 128, 0, 0.4);
-    background-position: center;
+.section-vision{
     display: flex;
-    justify-content: center;
-    flex-flow: row;
-    align-items: center;
-    padding: 10% 6%;
+    justify-content: space-between;
+    padding: 10% 5% 5% 5%;
+    text-align:center;
 }
 
-.vision-col {
-    width: 50%;
+.vision-element{
+    width: 20%;
 }
 
-.vision-col p {
-    padding: 2% 2% 2% 0;
+.vision-img{
+    width:60%;
 }
 
+.vision-text{
+    color: rgb(120, 120, 120);
+    text-align: center;
+    padding: 10% 0;
+}
+
+.link-info{
+    color: hsl(35, 87%, 63%);
+    margin-top: 20%;
+    text-align: right;
+}
 /*___________ENTRENAMIENTOS_________*/
 
 .entrenamientos-title {
@@ -491,9 +465,8 @@ nav ul {
         display: none;
     }
     .quienes-somos-grid {
-        margin: 0% 0% 4% 4%;
+        margin: 0% 0% 0% 4%;
         padding-top: 5%;
-        padding-bottom: 5%;
         max-width: 100%;
         display: grid;
         grid-template-columns: 1% 98% 1%;
@@ -508,14 +481,25 @@ nav ul {
         font-size: 1em;
     }
     /* VISION */
-    .vision-box {
-        flex-flow: column;
-        padding: 25% 0;
+    .section-vision{
+        display: block;
+        padding: 15% 5% 2% 5%;
     }
-    .vision-col {
-        width: 90%;
-        margin: 0 5%;
+
+    .vision-element{
+        width: 100%;
+        padding: 10% 0;
     }
+
+    .vision-img{
+        width: 50%;
+    }
+
+    .vision-text{
+        padding: 5% 0;
+    }
+
+
     /*ENTRENAMIENTOS*/
     .section-entrenamientos {
         display: block;
