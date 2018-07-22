@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -503,7 +504,7 @@ nav ul {
     /*ENTRENAMIENTOS*/
     .section-entrenamientos {
         display: block;
-        padding: 5% 0; 
+        /* padding: 5% 0;  */
     }
     .entrenamientos-title {
         font-size: 9vw;
@@ -523,7 +524,7 @@ nav ul {
     .section-sumate {
         flex-flow: column;
         height: auto;
-        padding: 15% 0;
+        padding: 25% 0;
     }
     .sumate-title {
         font-size: 10vw;
