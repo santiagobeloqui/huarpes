@@ -459,7 +459,7 @@ nav ul {
     }
     /*QUIÉNES SOMOS*/
     #section-quienes {
-        padding: 25% 0;
+        padding: 20% 0 0 0;
     }
     #section-quienes img {
         display: none;
@@ -503,10 +503,11 @@ nav ul {
     /*ENTRENAMIENTOS*/
     .section-entrenamientos {
         display: block;
-        padding: 25% 0;
+        /* padding: 5% 0; */
     }
     .entrenamientos-title {
         font-size: 9vw;
+        padding: 0;
     }
     .entrenamientos-text {
         width: 90%;
@@ -516,13 +517,13 @@ nav ul {
     }
     .entrenamientos-map {
         width: 90%;
-        margin: 10% 5%;
+        margin: 10% 5% 0 5%;
     }
     /*SUMATE*/
     .section-sumate {
         flex-flow: column;
         height: auto;
-        padding: 25% 0;
+        padding: 10% 0;
     }
     .sumate-title {
         font-size: 10vw;

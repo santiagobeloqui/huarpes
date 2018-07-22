@@ -21,7 +21,7 @@ let linkSumate = document.getElementById("link-sumate");
 function linking(button, section){
     button.addEventListener("click", ()=>{
         window.scroll({
-            top: section + 1,
+            top: section,
             left: 0,
             behavior: 'smooth'
         });
