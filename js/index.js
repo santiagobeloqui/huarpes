@@ -18,25 +18,25 @@ let linkVision = document.getElementById("link-vision");
 let linkEntrenamientos = document.getElementById("link-entrenamientos");
 let linkSumate = document.getElementById("link-sumate");
 
-function linking(button, section){
+function linking(button, section, plus=0){
     button.addEventListener("click", ()=>{
         window.scroll({
-            top: section,
+            top: section + plus,
             left: 0,
             behavior: 'smooth'
         });
-        setTimeout(()=>{
+        // setTimeout(()=>{
             nav.classList.add("nav-animation-out");
             logoMobile.classList.remove("logo-mobile-hide");
             logoMobile.classList.add("logo-mobile-show");
-        }, 300);
+        // }, 300);
     });
 }
 
 linking(linkQuienes, posSectionQuienes);
 linking(linkVision, posSectionVision);
-linking(linkEntrenamientos, posSectionEntrenamientos);
-linking(linkSumate, posSectionSumate);
+linking(linkEntrenamientos, posSectionEntrenamientos, 50);
+linking(linkSumate, posSectionSumate, 100);
 
 //----- Adaptación Header ------
 let headerLogo = document.getElementById("header-logo");

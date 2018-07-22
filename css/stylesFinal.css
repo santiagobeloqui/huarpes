@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 h1 {
@@ -500,11 +501,16 @@ nav ul {
         padding: 5% 0;
     }
 
+    .link-info{
+        text-align: center;
+        margin-top: 10%;
+    }
+
 
     /*ENTRENAMIENTOS*/
     .section-entrenamientos {
         display: block;
-        padding: 25% 0;
+        padding: 10% 0;
     }
     .entrenamientos-title {
         font-size: 9vw;
@@ -518,13 +524,13 @@ nav ul {
     }
     .entrenamientos-map {
         width: 90%;
-        margin: 10% 5% 0 5%;
+        margin: 10% 5% 10% 5%;
     }
     /*SUMATE*/
     .section-sumate {
         flex-flow: column;
         height: auto;
-        padding: 25% 0;
+        padding: 20% 0;
     }
     .sumate-title {
         font-size: 10vw;
