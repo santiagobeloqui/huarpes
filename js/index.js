@@ -25,7 +25,7 @@ function linking(button, section, plus=0){
         logoMobile.classList.add("logo-mobile-show");
         if(window.innerWidth <= 768){
             window.scroll({
-                top: section + plus,
+                top: section - plus,
                 left: 0,
                 behavior: 'smooth'
             });
@@ -43,7 +43,7 @@ function linking(button, section, plus=0){
 linking(linkQuienes, posSectionQuienes);
 linking(linkVision, posSectionVision);
 linking(linkEntrenamientos, posSectionEntrenamientos, 50);
-linking(linkSumate, posSectionSumate, 100);
+linking(linkSumate, posSectionSumate, 50);
 
 //----- Adaptación Header ------
 let headerLogo = document.getElementById("header-logo");
