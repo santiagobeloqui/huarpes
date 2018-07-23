@@ -70,6 +70,11 @@ menuButton.addEventListener("click", ()=>{
     }    
 });
 
+//----- Animaciones títulos ------
+let quienesTitle = document.getElementById("quienes-title");
+let entrenamientosTitle = document.getElementById("entrenamientos-title");
+let sumateTitle = document.getElementById("sumate-title");
+
 //----- Animación scroll -----
 
 window.onscroll = ()=>{
@@ -93,4 +98,14 @@ window.onscroll = ()=>{
         }
         headerMobile.classList.remove("header-mobile-visible");
     }
+    if(window.pageYOffset > posSectionQuienes - window.innerHeight / 2){
+        quienesTitle.classList.add("title-animation");
+    }
+    if(window.pageYOffset > posSectionEntrenamientos - window.innerHeight / 2){
+        entrenamientosTitle.classList.add("title-animation");
+    }
+    if(window.pageYOffset > posSectionSumate - window.innerHeight / 2){
+        sumateTitle.classList.add("title-animation");
+    }
+    
 };

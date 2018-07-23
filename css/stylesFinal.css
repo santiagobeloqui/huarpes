@@ -135,8 +135,25 @@ nav ul {
     align-items: center;
 }
 
-#section-quienes h1 {
+.quienes-title{
     color: rgb(241, 166, 60);
+    opacity: 0;
+}
+
+
+.title-animation{
+    animation-name: show-title;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show-quienes-title{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .quienes-somos-txt {
@@ -193,6 +210,7 @@ nav ul {
 .entrenamientos-title {
     color: rgb(120, 120, 120);
     margin-bottom: 5%;
+    opacity: 0;
 }
 
 .section-entrenamientos {
@@ -236,6 +254,7 @@ nav ul {
     color: white;
     margin-left: 5%;
     padding-top: 8%;
+    opacity:0;
 }
 
 .sumate-text {
