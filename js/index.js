@@ -20,16 +20,23 @@ let linkSumate = document.getElementById("link-sumate");
 
 function linking(button, section, plus=0){
     button.addEventListener("click", ()=>{
-        window.scroll({
-            top: section + plus,
-            left: 0,
-            behavior: 'smooth'
-        });
-        // setTimeout(()=>{
-            nav.classList.add("nav-animation-out");
-            logoMobile.classList.remove("logo-mobile-hide");
-            logoMobile.classList.add("logo-mobile-show");
-        // }, 300);
+        nav.classList.add("nav-animation-out");
+        logoMobile.classList.remove("logo-mobile-hide");
+        logoMobile.classList.add("logo-mobile-show");
+        if(window.innerWidth <= 768){
+            window.scroll({
+                top: section + plus,
+                left: 0,
+                behavior: 'smooth'
+            });
+        } else{
+            window.scroll({
+                top: section,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+        
     });
 }
 
