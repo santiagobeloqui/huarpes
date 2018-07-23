@@ -134,7 +134,7 @@ nav ul {
     animation-fill-mode: forwards;
 }
 
-@keyframes show-quienes-title{
+@keyframes show-title{
     0%{
         opacity: 0;
     }
@@ -494,7 +494,7 @@ nav ul {
         justify-items: center;
         align-items: center;
     }
-    #section-quienes h1 {
+    .quienes-title {
         font-size: 10vw;
     }
     .quienes-somos-txt p {
